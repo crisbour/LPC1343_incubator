@@ -1,0 +1,3 @@
+Delay.cpp:11:6:void initTimer0()	4	static
+Delay.cpp:21:6:void delayMicroseconds(unsigned int)	16	static
+Delay.cpp:32:6:void delay(unsigned int)	16	static

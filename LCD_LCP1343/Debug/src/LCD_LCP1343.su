@@ -1,0 +1,11 @@
+core_cm3.h:1493:22:void NVIC_SystemReset()	4	static
+LCD_LCP1343.cpp:56:5:int main()	24	static
+LCD_LCP1343.cpp:107:6:void initTempSensors()	8	static
+LCD_LCP1343.cpp:133:6:void verifyTemp(float*, float*)	16	static
+LCD_LCP1343.cpp:154:6:void writeTempLCD(float, float)	16	static
+LCD_LCP1343.cpp:163:6:void HeaterControl(float, float, float)	40	static
+LCD_LCP1343.cpp:181:6:void lightLCD()	8	static
+LCD_LCP1343.cpp:193:6:void FanControl(float, float)	24	static
+LCD_LCP1343.cpp:217:6:void resetBoard()	8	static
+LCD_LCP1343.cpp:222:1:void __static_initialization_and_destruction_0(int, int)	16	static
+LCD_LCP1343.cpp:222:1:cpp)	8	static

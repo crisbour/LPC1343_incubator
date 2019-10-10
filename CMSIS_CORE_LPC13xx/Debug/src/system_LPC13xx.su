@@ -1,0 +1,2 @@
+system_LPC13xx.c:336:6:SystemCoreClockUpdate	0	static
+system_LPC13xx.c:427:6:SystemInit	0	static

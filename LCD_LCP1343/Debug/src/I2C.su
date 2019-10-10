@@ -1,0 +1,4 @@
+I2C.cpp:13:6:void I2C_init()	4	static
+I2C.cpp:25:6:void beginTransmission(uint8_t)	16	static
+I2C.cpp:35:6:void sendData(uint8_t)	16	static
+I2C.cpp:41:6:void endTransmission()	4	static

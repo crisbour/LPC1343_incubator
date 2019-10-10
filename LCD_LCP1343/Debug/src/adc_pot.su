@@ -1,0 +1,5 @@
+core_cm3.h:1323:22:void NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm3.h:1335:22:void NVIC_DisableIRQ(IRQn_Type)	16	static
+adc_pot.cpp:14:6:void initADC()	4	static
+adc_pot.cpp:24:6:void readPot()	8	static
+adc_pot.cpp:27:6:void ADC_IRQHandler()	24	static
