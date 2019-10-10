@@ -33,14 +33,14 @@ C_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C++ Compiler'
-	arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DDONT_ENABLE_SWVTRACECLK -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC13xx -DCPP_USE_HEAP -D__LPC13XX__ -I"C:\Users\bourc\Documents\MCUXpressoIDE_11.0.1_2563\workspace\CMSIS_CORE_LPC13xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DDONT_ENABLE_SWVTRACECLK -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC13xx -DCPP_USE_HEAP -D__LPC13XX__ -I"C:\Users\bourc\Documents\uC Projects\LPC1343_incubator\CMSIS_CORE_LPC13xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__NEWLIB__ -DDONT_ENABLE_SWVTRACECLK -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC13xx -DCPP_USE_HEAP -D__LPC13XX__ -I"C:\Users\bourc\Documents\MCUXpressoIDE_11.0.1_2563\workspace\CMSIS_CORE_LPC13xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__NEWLIB__ -DDONT_ENABLE_SWVTRACECLK -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC13xx -DCPP_USE_HEAP -D__LPC13XX__ -I"C:\Users\bourc\Documents\uC Projects\LPC1343_incubator\CMSIS_CORE_LPC13xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

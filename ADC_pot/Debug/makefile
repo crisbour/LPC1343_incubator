@@ -44,7 +44,7 @@ all: ADC_pot.axf
 ADC_pot.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostdlib -L"C:\Users\bourc\Documents\MCUXpressoIDE_11.0.1_2563\workspace\CMSIS_CORE_LPC13xx\Debug" -Xlinker -Map="ADC_pot.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "ADC_pot_Debug.ld" -o "ADC_pot.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostdlib -L"C:\Users\bourc\Documents\uC Projects\LPC1343_incubator\CMSIS_CORE_LPC13xx\Debug" -Xlinker -Map="ADC_pot.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "ADC_pot_Debug.ld" -o "ADC_pot.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
@@ -56,7 +56,7 @@ clean:
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "ADC_pot.axf" ; arm-none-eabi-objcopy -v -O binary "ADC_pot.axf" "ADC_pot.bin" ; # checksum -p LPC1343 -d "ADC_pot.bin"
+	-arm-none-eabi-size "ADC_pot.axf"; # arm-none-eabi-objcopy -v -O binary "ADC_pot.axf" "ADC_pot.bin" ; # checksum -p LPC1343 -d "ADC_pot.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents post-build

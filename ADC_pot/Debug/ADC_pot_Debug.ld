@@ -6,7 +6,7 @@
  * Generated linker script file for LPC1343
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.0.1 [Build 2563] [2019-09-01] on 09-Oct-2019 07:25:35
+ * MCUXpresso IDE v11.0.1 [Build 2563] [2019-09-01] on 10-Oct-2019 23:11:24
  */
 
 INCLUDE "ADC_pot_Debug_library.ld"
